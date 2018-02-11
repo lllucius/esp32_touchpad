@@ -7,14 +7,14 @@ a continuous touch, and when the touch is released.
 
 You specify configuration options for each touch pad:
 ```
-    class Config
-    {
-    public:
-        uint32_t delay;     // # of milliseconds pad must be touched before notify, 0 = immediate
-        uint32_t repeat;    // # of milliseconds between notifies if pad is held, 0 = no repeat
-        uint16_t touched;   // touch detection threshold
-        uint16_t released;  // release detection threshold
-    };
+class Config
+{
+public:
+    uint32_t delay;     // # of milliseconds pad must be touched before notify, 0 = immediate
+    uint32_t repeat;    // # of milliseconds between notifies if pad is held, 0 = no repeat
+    uint16_t touched;   // touch detection threshold
+    uint16_t released;  // release detection threshold
+};
 ```
 
 To use, just add the "touchpad" component to your components directory
